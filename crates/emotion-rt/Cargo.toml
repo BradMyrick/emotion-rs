@@ -1,0 +1,7 @@
+[package]
+name = "emotion-rt"
+version = "0.1.0"
+edition = "2021"
+description = "emotion-rs runtime: EE crt0, rom0 kernel syscalls, GS register access for pure-Rust PS2 boots"
+license = "MIT"
+publish = false

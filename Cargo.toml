@@ -1,0 +1,18 @@
+[workspace]
+resolver = "2"
+members = ["crates/emotion-rt", "examples/hello-rs", "examples/pure-boot"]
+
+[workspace.dependencies]
+libm = "0.2"
+
+# No LTO yet: LLVM MIPS LTO output linked by ee-gcc/binutils is untested;
+# revisit with a measured pass (PLAN.md ground rule: correctness first).
+[profile.release]
+opt-level = 3
+codegen-units = 1
+# The no_std lib cannot unwind on any target (the PS2 spec says abort;
+# this makes host-side clippy/lib builds agree). Ignored for `cargo test`.
+panic = "abort"
+
+[profile.dev]
+panic = "abort"

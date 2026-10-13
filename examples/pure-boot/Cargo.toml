@@ -1,0 +1,10 @@
+[package]
+name = "pure-boot"
+version = "0.1.0"
+edition = "2021"
+description = "emotion-rs Phase 2 example: pure-Rust boot, vsync-toggled background, exit to browser"
+license = "MIT"
+publish = false
+
+[dependencies]
+emotion-rt = { path = "../../crates/emotion-rt" }

@@ -1,0 +1,14 @@
+[package]
+name = "hello-rs"
+version = "0.1.0"
+edition = "2021"
+description = "emotion-rs Phase 1 example: Rust game logic on the PS2 via the C shim"
+license = "MIT"
+publish = false
+
+[lib]
+name = "hello_rs"
+crate-type = ["staticlib"]
+
+[dependencies]
+libm = { workspace = true }

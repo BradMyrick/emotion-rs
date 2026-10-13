@@ -1,0 +1,21 @@
+{
+  "arch": "mips",
+  "cpu": "mips2",
+  "crt-objects-fallback": "false",
+  "data-layout": "e-m:m-p:32:32-i8:8:32-i16:16:32-i64:64-n32-S64",
+  "executables": true,
+  "features": "+mips2,+soft-float",
+  "linker": "mips64r5900el-ps2-elf-gcc",
+  "linker-flavor": "gcc",
+  "llvm-abiname": "o32",
+  "llvm-target": "mipsel-unknown-none",
+  "max-atomic-width": 32,
+  "os": "none",
+  "panic-strategy": "abort",
+  "position-independent-executables": false,
+  "relocation-model": "static",
+  "target-c-int-width": 32,
+  "target-endian": "little",
+  "target-pointer-width": 32,
+  "vendor": "sony"
+}

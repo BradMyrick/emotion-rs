@@ -1,0 +1,6 @@
+/target
+*.elf
+*.iso
+*.chd
+
+AGENTS.md
